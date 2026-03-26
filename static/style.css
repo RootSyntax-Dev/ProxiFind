@@ -1,0 +1,370 @@
+/* ================================================================
+SECTION 0: THEME VARIABLES
+================================================================ */
+:root {
+  /* Default Dark Theme */
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f1f5f9;
+  --text-dim: #94a3b8;
+  --border: rgba(255, 255, 255, 0.08);
+  --glass: rgba(15, 23, 42, 0.85);
+  --input-bg: #1e293b;
+}
+
+/* Light Theme Class */
+.light-mode {
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-dim: #64748b;
+  --border: rgba(0, 0, 0, 0.1);
+  --glass: rgba(255, 255, 255, 0.9);
+  --input-bg: #f1f5f9;
+}
+
+/* ================================================================
+SECTION 1: RESET & GLOBAL STYLES
+================================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ================================================================
+SECTION 2: HEADER & THEME TOGGLE SWITCH (Final Left-Align Fix)
+================================================================ */
+.header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Flexbox logic to push items to extreme ends */
+.header-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 100%; /* Puri width lega */
+    max-width: 100% !important; /* Limit hata di */
+    margin: 0; /* Auto hata diya */
+    padding: 0 20px; /* Side se thodi jagah saaf dikhne ke liye */
+}
+
+/* Brand area (Logo + Text) - Always Left */
+.brand-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5px;
+    text-align: left; /* Strict Left alignment */
+}
+
+.app-logo {
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    object-fit: contain;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.app-name {
+    /* 🔥 center-align ko puri tarah hata diya */
+    text-align: left !important; 
+    font-size: 1.3rem !important; 
+    font-weight: 800 !important; 
+    color: var(--text-main) !important;
+    letter-spacing: -0.6px;
+    margin: 0 !important; 
+    line-height: 1; /* Extra spacing hatayi */
+    margin-bottom: 0 !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    transition: color 0.3s ease;
+}
+
+/* --- Toggle Switch UI --- */
+.switch {
+    position: relative; 
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0; /* Prevents switch from squishing */
+}
+
+.switch input { opacity: 0; width: 0; height: 0; }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #334155;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider { background-color: #10b981; }
+input:checked + .slider:before { transform: translateX(20px); }
+
+/* Logo hover effect */
+.brand-wrapper:hover .app-logo {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+/* ================================================================
+SECTION 3: LAYOUT & SEARCH SYSTEM
+================================================================ */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.main-content {
+  margin-top: 80px;
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+}
+
+#place {
+  grid-column: span 2;
+}
+
+input,
+select,
+button {
+  height: 48px;
+  padding: 0 15px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text-main);
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+button {
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+.btn-primary {
+  background: #10b981;
+}
+.btn-secondary {
+  background: #3b82f6;
+}
+button:active {
+  transform: scale(0.97);
+}
+
+/* SweetAlert Mobile Fit */
+.swal2-popup.compact-swal-popup {
+    border-radius: 15px !important;
+    font-size: 0.9rem !important;
+    margin: 0 15px;
+}
+
+.swal2-title {
+    font-size: 1.2rem !important;
+}
+
+/* ================================================================
+SECTION 4: MAP & ROUTING UI
+================================================================ */
+#map {
+  height: 400px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  scroll-margin-top: 100px;
+}
+
+.leaflet-routing-container {
+  background: var(--bg-card) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+
+  width: 260px !important;
+  max-height: 280px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
+  font-size: 0.8rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.leaflet-routing-alt,
+.leaflet-routing-alt table {
+  background: transparent !important;
+  color: var(--text-main) !important;
+  width: 100% !important;
+  table-layout: fixed !important;
+  margin: 0 !important;
+}
+
+.leaflet-routing-alt tr,
+.leaflet-routing-alt td,
+.leaflet-routing-alt h2,
+.leaflet-routing-alt h3 {
+  background: transparent !important;
+  color: var(--text-main) !important;
+}
+
+.leaflet-routing-alt td {
+  padding: 8px 5px !important;
+  border-bottom: 1px solid var(--border) !important;
+  word-wrap: break-word !important;
+  white-space: normal !important;
+  vertical-align: middle !important;
+}
+
+.leaflet-routing-alt-selected,
+.leaflet-routing-alt tr:hover {
+  background-color: rgba(128, 128, 128, 0.15) !important;
+  cursor: pointer;
+}
+
+.leaflet-routing-icon {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(85%) saturate(3069%)
+    hue-rotate(200deg) brightness(101%) contrast(106%) !important;
+}
+
+.leaflet-routing-alt tr:hover .leaflet-routing-icon {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(94%) saturate(3419%)
+    hue-rotate(203deg) brightness(103%) contrast(110%) !important;
+}
+
+.leaflet-routing-container::-webkit-scrollbar {
+  width: 4px;
+}
+.leaflet-routing-container::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .leaflet-routing-container {
+    width: 180px !important;
+    max-height: 200px !important;
+  }
+}
+
+/* ================================================================
+SECTION 5: RESULT CARDS
+================================================================ */
+#results h2 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--text-dim);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+  transition: 0.2s;
+}
+
+.card:active {
+  opacity: 0.8;
+}
+.card-icon {
+  font-size: 1.5rem;
+  margin-right: 12px;
+  background: var(--bg-main);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+.card-body p {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+/* ================================================================
+SECTION 6: RESPONSIVE FIXES
+================================================================ */
+@media (max-width: 600px) {
+  .main-content {
+    margin-top: 70px;
+  }
+  #map {
+    height: 280px;
+  }
+  .search-box {
+    gap: 8px;
+  }
+  input,
+  select,
+  button {
+    height: 44px;
+    font-size: 0.9rem;
+  }
+  .leaflet-routing-container {
+    max-width: 160px !important;
+    max-height: 180px !important;
+  }
+}
+

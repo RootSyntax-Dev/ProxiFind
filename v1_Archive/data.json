@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Sagar Gaire (Indrapuri)", 
+        "lat": 23.2504, 
+        "lon": 77.4528,
+        "type": "restaurant"
+    },
+    {
+        "name": "BHEL Dussehra Maidan", 
+        "lat": 23.2384, 
+        "lon": 77.4565,
+        "type": "place"
+    },
+    {
+        "name": "Minal Residential Sector", 
+        "lat": 23.2650, 
+        "lon": 77.4580,
+        "type": "residential"
+    },
+    {
+        "name": "DB City Mall", 
+        "lat": 23.2323, 
+        "lon": 77.4326,
+        "type": "shopping"
+    },
+    {
+        "name": "Bhopal Railway Station", 
+        "lat": 23.2660, 
+        "lon": 77.4110,
+        "type": "transport"
+    }
+]

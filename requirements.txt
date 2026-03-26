@@ -1,0 +1,9 @@
+# --- Backend Web Framework ---
+Flask==3.0.0
+
+# --- Geocoding & API requests ---
+requests==2.31.0
+geopy==2.4.1
+
+# --- Deployment (Optional but Recommended) ---
+gunicorn==21.2.0
