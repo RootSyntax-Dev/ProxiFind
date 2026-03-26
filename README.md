@@ -16,11 +16,18 @@ A professional Full-Stack Web Application to find nearby essential services (Hos
 - **Maps**: Leaflet.js, OpenStreetMap (Overpass API)
 
 ## 📂 Project Structure
-- `app.py`: Main Flask application (The Bridge).
-- `main.py`: Backend logic for Geocoding and API calls (The Engine).
-- `static/`: Contains `style.css` (UI) and `script.js` (Map Logic).
-- `templates/`: Contains `index.html` (Main Page).
-- `v1_Archive/`: Previous versions and experimental logic.
+ProxiFind/
+├── app.py
+├── main.py
+├── requirements.txt
+├── README.md
+├── static/
+│   ├── style.css
+│   ├── script.js
+│   └── favicon.png
+├── templates/
+│   └── index.html
+└── v1_Archive/
 
 ## ⚙️ How to Run
 1. Clone the repository.
