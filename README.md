@@ -16,6 +16,7 @@ A professional Full-Stack Web Application to find nearby essential services (Hos
 - **Maps**: Leaflet.js, OpenStreetMap (Overpass API)
 
 ## 📂 Project Structure
+```text
 ProxiFind/
 ├── app.py
 ├── main.py
@@ -28,9 +29,19 @@ ProxiFind/
 ├── templates/
 │   └── index.html
 └── v1_Archive/
+```
 
 ## ⚙️ How to Run
-1. Clone the repository.
-2. Install dependencies:
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/ProxiFind.git](https://github.com/your-username/ProxiFind.git)
+   ```
+
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
+   ```
+
+3. **Run the application:**
+   ```bash
+   python app.py
