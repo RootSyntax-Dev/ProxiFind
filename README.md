@@ -34,7 +34,7 @@ ProxiFind/
 ## ⚙️ How to Run
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/ProxiFind.git](https://github.com/your-username/ProxiFind.git)
+   git clone [https://github.com/RootSyntax-Dev/ProxiFind.git](https://github.com/RootSyntax-Dev/ProxiFind.git)
    ```
 
 2. **Install dependencies:**
