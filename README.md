@@ -69,3 +69,19 @@ PROXIMITY-SERVICE-FINDER/
 3. **Run the application:**
    ```bash
    python app.py
+
+## 👤 Author
+
+**Vinay Shah**
+* 🎓 **Final Year B.Tech Student (CSE-AIML)**
+* 💻 **Passionate Developer & AI Enthusiast**
+* 🌐 **GitHub:** [@RootSyntax-Dev](https://github.com/RootSyntax-Dev)
+
+<p align="center">
+  <br>
+  <a href="https://www.linkedin.com/in/vinay-py-dev/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <br><br>
+  Developed with ❤️ by <b>RootSyntax-Dev</b>
+</p>
