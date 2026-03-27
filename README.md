@@ -1,36 +1,64 @@
 # 📍 India Service Finder (Proximity-Based Search)
 
-A professional Full-Stack Web Application to find nearby essential services (Hospitals, ATMs, Restaurants, etc.) across India with integrated real-time routing.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white" />
+</p>
 
-## 🚀 Key Features
-- **Global India Search**: Locate any city or area using Photon & Geopy API fallback.
-- **Live Directions**: Integrated Leaflet Routing Machine for turn-by-turn visual paths.
-- **Smart Filtering**: Categorized results with distance-based sorting (Haversine Formula).
-- **Modern UI**: Fully responsive Glassmorphism design with a fixed blurred header.
+A professional **Full-Stack Web Application** designed to help users locate essential services like Hospitals, ATMs, and Restaurants across India. Built with real-time routing and a sleek Glassmorphism UI.
 
+---
 
+## ✨ Key Features
+
+* 🌍 **Global India Search:** Accurate location finding using Photon & Geopy API.
+* 🛣️ **Live Directions:** Visual turn-by-turn paths using Leaflet Routing Machine.
+* 🎯 **Smart Filtering:** Categorized results sorted by distance (Haversine Formula).
+* 🎨 **Modern UI:** Responsive Glassmorphism design with Dark/Light mode support.
+
+---
+
+## 📸 UI Dashboards
+
+### 📱 Mobile View
+| **Bangaluru (Dark)** | **Marine Drive (Light)** | **GPS Tracking** |
+| :---: | :---: | :---: |
+| <img src="Output-images/Mobile-Dashboard/Bangaluru-Dark.png" width="200"> | <img src="Output-images/Mobile-Dashboard/Marine-Drive-Light.png" width="200"> | <img src="Output-images/Mobile-Dashboard/GPS-Location-Dark.png" width="200"> |
+
+### 💻 Desktop View
+| **Bhopal Junction (Dark)** | **Indore Airport (Light)** |
+| :---: | :---: |
+| ![PC Dark](Output-images/PC-Dashboard/Bhopal-junction-Dark.png) | ![PC Light](Output-images/PC-Dashboard/Indore-airport-Light.png) |
+
+---
 
 ## 🛠️ Tech Stack
-- **Backend**: Python (Flask)
-- **Frontend**: HTML5, CSS3 (Modern Grid/Flexbox), JavaScript (ES6)
-- **Maps**: Leaflet.js, OpenStreetMap (Overpass API)
+
+- **Backend:** `Python` (Flask)
+- **Frontend:** `HTML5`, `CSS3` (Glassmorphism), `JavaScript` (ES6)
+- **Maps & Location:** `Leaflet.js`, `OpenStreetMap`, `Overpass API`
+- **Mathematics:** `Haversine Formula` for distance calculation.
+
+---
 
 ## 📂 Project Structure
-```text
-ProxiFind/
-├── app.py
-├── main.py
-├── requirements.txt
-├── README.md
-├── static/
-│   ├── style.css
-│   ├── script.js
-│   └── favicon.png
-├── templates/
-│   └── index.html
-└── v1_Archive/
-```
 
+```text
+PROXIMITY-SERVICE-FINDER/
+├── app.py                 
+├── main.py                
+├── requirements.txt       
+├── Output-images/         
+│   ├── Mobile-Dashboard/   
+│   └── PC-Dashboard/       
+├── static/              
+│   ├── style.css
+│   └── script.js
+└── templates/              
+    └── index.html
+````
 ## ⚙️ How to Run
 1. **Clone the repository:**
    ```bash
