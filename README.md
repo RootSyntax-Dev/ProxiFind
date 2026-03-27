@@ -18,17 +18,34 @@ A professional **Full-Stack Web Application** designed to help users locate esse
 * 🎨 **Modern UI:** Responsive Glassmorphism design with Dark/Light mode support.
 
 
-## 📸 UI Dashboards
+## 📸 UI Dashboards & Screenshots
 
-### 📱 Mobile View
-| **Bangaluru (Dark)** | **Marine Drive (Light)** | **GPS Tracking** |
+A visual overview of the Proximity Service Finder across different devices and themes.
+
+### 📱 Mobile Dashboard (Light & Dark Mode)
+| **Bangaluru (Dark)** | **Bangaluru (Light)** | **Marine Drive (Light)** |
 | :---: | :---: | :---: |
-| <img src="Output-images/Mobile-Dashboard/Bangaluru-Dark.png" width="200"> | <img src="Output-images/Mobile-Dashboard/Marine-Drive-Light.png" width="200"> | <img src="Output-images/Mobile-Dashboard/GPS-Location-Dark.png" width="200"> |
+| <img src="Output-images/Mobile-Dashboard/Bangaluru-Dark.png" width="220"> | <img src="Output-images/Mobile-Dashboard/Bangaluru-Light.png" width="220"> | <img src="Output-images/Mobile-Dashboard/Marine-Drive-Light.png" width="220"> |
 
-### 💻 Desktop View
-| **Bhopal Junction (Dark)** | **Indore Airport (Light)** |
+| **GPS Tracking (Dark)** | **GPS Tracking (Light)** | **Places Card** |
+| :---: | :---: | :---: |
+| <img src="Output-images/Mobile-Dashboard/GPS-Location-Dark.png" width="220"> | <img src="Output-images/Mobile-Dashboard/GPS-Location-Light.png" width="220"> | <img src="Output-images/Mobile-Dashboard/Places-Card-Light.png" width="220"> |
+
+
+### 💻 Desktop Dashboard
+| **Bhopal Junction (Dark Theme)** | **Indore Airport (Light Theme)** |
 | :---: | :---: |
 | ![PC Dark](Output-images/PC-Dashboard/Bhopal-junction-Dark.png) | ![PC Light](Output-images/PC-Dashboard/Indore-airport-Light.png) |
+
+| **Categories & Filtering** | **Detailed Places View** |
+| :---: | :---: |
+| ![Categories](Output-images/PC-Dashboard/Categories-Filter.png) | ![Places](Output-images/PC-Dashboard/Places-Card.png) |
+
+
+### 🗺️ Location-Specific Previews
+| **Marine Drive (Dark)** | **Indore Airport (Dark)** |
+| :---: | :---: |
+| ![Marine Dark](Output-images/PC-Dashboard/Marine-Drive-Dark.png) | ![Indore Dark](Output-images/PC-Dashboard/Indore-airport-Dark.png) |
 
 
 ## 🛠️ Tech Stack
