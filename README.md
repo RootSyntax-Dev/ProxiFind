@@ -9,7 +9,6 @@
 
 A professional **Full-Stack Web Application** designed to help users locate essential services like Hospitals, ATMs, and Restaurants across India. Built with real-time routing and a sleek Glassmorphism UI.
 
----
 
 ## ✨ Key Features
 
@@ -18,7 +17,6 @@ A professional **Full-Stack Web Application** designed to help users locate esse
 * 🎯 **Smart Filtering:** Categorized results sorted by distance (Haversine Formula).
 * 🎨 **Modern UI:** Responsive Glassmorphism design with Dark/Light mode support.
 
----
 
 ## 📸 UI Dashboards
 
@@ -32,7 +30,6 @@ A professional **Full-Stack Web Application** designed to help users locate esse
 | :---: | :---: |
 | ![PC Dark](Output-images/PC-Dashboard/Bhopal-junction-Dark.png) | ![PC Light](Output-images/PC-Dashboard/Indore-airport-Light.png) |
 
----
 
 ## 🛠️ Tech Stack
 
@@ -41,7 +38,6 @@ A professional **Full-Stack Web Application** designed to help users locate esse
 - **Maps & Location:** `Leaflet.js`, `OpenStreetMap`, `Overpass API`
 - **Mathematics:** `Haversine Formula` for distance calculation.
 
----
 
 ## 📂 Project Structure
 
