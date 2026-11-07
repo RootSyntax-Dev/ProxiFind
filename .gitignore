@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+# Virtual Environments
+.venv/
+.venv-*/
+# Salesforce
+.sfdx/
+# Generated Output
+output/
+# Environment Variables
+.env
+.env.*
+# IDE
+.vscode/
+# OS
+.DS_Store
+Thumbs.db
